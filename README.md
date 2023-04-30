@@ -1,5 +1,14 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/coREwzrI)
 
+
+## About
+
+This simple project is a web application that allows to create plants.
+Every plant has a name, and a required watering interval in days.
+The application lists every plant and shows when the plant was last watered.
+
+Every plant can be watered, and shows a percentage gauge of how much time has passed since the last watering.
+
 ## Development
 
 ## Setup
