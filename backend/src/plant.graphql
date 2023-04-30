@@ -1,0 +1,25 @@
+type Query{
+    plants: [Plant!]!
+    plant(id: ID): Plant
+}
+
+type Mutation{
+    addPlant(plant: PlantInput): Plant!
+    waterPlant(id: ID): Boolean
+    removePlant(id: ID): Plant!
+    editPlant(id: ID, plant: PlantInput): Plant!
+}
+
+input PlantInput {
+    name: String!
+    waterFrequency: Int!
+}
+
+type Plant {
+    id: ID!
+    name: String!
+    lastWatered: DateTime
+    waterFrequency: Int!
+}
+
+scalar DateTime

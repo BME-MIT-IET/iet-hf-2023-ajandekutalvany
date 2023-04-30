@@ -1,0 +1,6 @@
+mutation removePlant($id:ID) {
+    removePlant(id: $id) {
+        id
+        name
+    }
+}

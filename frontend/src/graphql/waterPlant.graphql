@@ -1,0 +1,3 @@
+mutation waterPlant($id:ID!) {
+    waterPlant(id:$id)
+}

@@ -1,0 +1,8 @@
+query plant($id:ID) {
+    plant(id: $id) {
+        id
+        name
+        lastWatered
+        waterFrequency
+    }
+}

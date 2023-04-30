@@ -1,0 +1,9 @@
+mutation editPlant($id:ID!, $plant:PlantInput!){
+    editPlant(id:$id, plant: $plant)
+    {
+        id,
+        name,
+        lastWatered,
+        waterFrequency
+    }
+}

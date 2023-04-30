@@ -1,0 +1,6 @@
+mutation addPlant($name: String!, $waterFrequency: Int!) {
+    addPlant(plant: { name: $name, waterFrequency: $waterFrequency }) {
+        id,
+        name
+    }
+}
