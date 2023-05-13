@@ -1,5 +1,5 @@
 # ⚒ Build the builder image
-FROM node:18-bullseye as builder
+FROM node:18-bullseye as prodbuild
 
 # 🤫 Silence npm
 ENV NPM_CONFIG_LOGLEVEL=error
@@ -12,14 +12,10 @@ COPY package*.json tsconfig.json ./
 COPY prisma ./prisma/
 
 # 👇 Install deps and build source
-RUN npm ci
+RUN yarn install --frozen-lockfile
 
 COPY src ./src
-RUN npm run build
-
-FROM builder as prodbuild
-# 👇 Delete dev deps as they are no longer needed
-RUN npm prune --production
+RUN yarn build
 
 # 🚀 Build the runner image
 FROM node:18-bullseye-slim as runner
