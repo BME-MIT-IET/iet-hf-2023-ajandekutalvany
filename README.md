@@ -15,7 +15,7 @@ Every plant can be watered, and shows a percentage gauge of how much time has pa
 
 1. Install [Node.js](https://nodejs.org/en/download/)
 2. Install [Yarn](https://yarnpkg.com/en/docs/install)
-3. Install [PostgreSQL](https://www.postgresql.org/download/)
+3. Install [Docker / DockerDesktop](https://www.docker.com/products/docker-desktop/)
 
 ## Running the app
 
@@ -29,6 +29,13 @@ cp .env.example .env
 yarn install
 # Generate the prisma client
 yarn db:generate
+```
+
+Start the database
+```bash
+yarn db:start
+# You can also stop the database later like this:
+# yarn db:stop
 ```
 
 Migrate the database, only needs to be done when the database schema changes

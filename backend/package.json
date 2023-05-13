@@ -19,11 +19,12 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "db:start": "docker-compose -f docker-compose-db.yaml up -d",
+    "db:stop": "docker-compose -f docker-compose-db.yaml down",
     "db:generate": "npx prisma generate",
     "db:migrate:dev": "npx prisma migrate dev",
     "db:migrate:prod": "npx prisma migrate deploy",
-    "db:seed": "ts-node src/prisma/seed/seed.ts",
-    "skaffold": "skaffold deploy --module=postgresql --port-forward"
+    "db:seed": "ts-node src/prisma/seed/seed.ts"
   },
   "dependencies": {
     "@apollo/server": "^4.4.0",
