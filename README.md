@@ -1,5 +1,10 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/coREwzrI)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/08017f07-58d4-48c5-9b49-342cacc61d5d/deploy-status)](https://app.netlify.com/sites/iet-palnt/deploys)
+
+## Production URLs
+- Frontend: https://iet-palnt.netlify.app/
+- Backend (Gql Playground): https://anton.sch.bme.hu/iet/api/graphql
 
 ## About
 
