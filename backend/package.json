@@ -37,6 +37,7 @@
     "@nestjs/platform-express": "^9.0.0",
     "@nestjs/terminus": "^9.2.1",
     "@prisma/client": "4.10.1",
+    "@types/k6": "^0.44.1",
     "apollo-server-express": "^3.11.1",
     "env-var": "^7.3.0",
     "graphql": "^16.6.0",

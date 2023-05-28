@@ -80,4 +80,9 @@ export class PlantService {
       },
     });
   }
+
+  removeAllPlants() {
+    this.prismaService.plant.deleteMany();
+    return true;
+  }
 }
