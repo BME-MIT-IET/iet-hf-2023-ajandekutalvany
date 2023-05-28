@@ -81,8 +81,8 @@ export class PlantService {
     });
   }
 
-  removeAllPlants() {
-    this.prismaService.plant.deleteMany();
+  async removeAllPlants() {
+    await this.prismaService.plant.deleteMany();
     return true;
   }
 }
