@@ -7,7 +7,9 @@ type Mutation{
     addPlant(plant: PlantInput): Plant!
     waterPlant(id: ID): Boolean
     removePlant(id: ID): Plant!
+    removeAllPlants: Boolean
     editPlant(id: ID, plant: PlantInput): Plant!
+
 }
 
 input PlantInput {
