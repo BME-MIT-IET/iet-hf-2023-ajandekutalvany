@@ -1,3 +1,4 @@
 {
-  "REACT_APP_GRAPHQL_ENDPOINT": "http://localhost:3001/graphql"
+  "REACT_APP_GRAPHQL_ENDPOINT": "https://anton.sch.bme.hu/iet/api/graphql",
+  "Replace_with_this_if_not_working": "http://localhost:3001/graphql"
 }
