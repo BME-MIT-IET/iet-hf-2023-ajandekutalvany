@@ -44,7 +44,7 @@ describe("Creating, watering and deleting plants", () => {
 
     cy.get('[data-testid="waterPlantButton"]').should("be.visible").click();
 
-    cy.get(lastWateredLabelSelector).should("have.text", "in a few seconds");
+    cy.get(lastWateredLabelSelector).should("have.text", "a few seconds ago");
   });
 
   it("should delete a plant correctly", () => {
