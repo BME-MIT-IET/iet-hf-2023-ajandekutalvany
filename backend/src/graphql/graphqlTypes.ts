@@ -22,6 +22,7 @@ export interface IMutation {
     addPlant(plant?: Nullable<PlantInput>): Plant | Promise<Plant>;
     waterPlant(id?: Nullable<string>): Nullable<boolean> | Promise<Nullable<boolean>>;
     removePlant(id?: Nullable<string>): Plant | Promise<Plant>;
+    removeAllPlants(): Nullable<boolean> | Promise<Nullable<boolean>>;
     editPlant(id?: Nullable<string>, plant?: Nullable<PlantInput>): Plant | Promise<Plant>;
 }
 
