@@ -43,6 +43,11 @@ export class PlantResolver {
     return this.plantService.removePlant(id);
   }
 
+  @Mutation('removeAllPlants')
+  async removeAllPlants() {
+    return this.plantService.removeAllPlants();
+  }
+
   @Mutation('editPlant')
   async editPlant(@Args('id') id: string, @Args('plant') plant: PlantInput) {
     return this.plantService.editPlant(id, plant);
