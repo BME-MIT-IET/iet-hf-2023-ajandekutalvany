@@ -21,7 +21,7 @@ const addr = 'https://anton.sch.bme.hu/iet/api/graphql//:3001/graphql';
  */
 const query = `
  mutation editPlant{
-    editPlant(id: "53576c55-2072-482f-8a95-2eebb1553ca4", plant: { name: "perf_test_modified", waterFrequency: 2 }) {
+    editPlant(id: "${__ENV.PLANT_ID}", plant: { name: "perf_test_modified", waterFrequency: 2 }) {
         id,
             name
     }

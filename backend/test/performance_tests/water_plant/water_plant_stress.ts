@@ -21,7 +21,7 @@ const addr = 'https://anton.sch.bme.hu/iet/api/graphql//:3001/graphql';
  */
 const query = `
   mutation waterPlant {
-    waterPlant(id: "53576c55-2072-482f-8a95-2eebb1553ca4")
+    waterPlant(id: "${__ENV.PLANT_ID}")
 }
 `;
 
