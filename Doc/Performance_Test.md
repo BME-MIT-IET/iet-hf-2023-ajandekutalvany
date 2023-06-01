@@ -15,7 +15,7 @@ Az Következő adatbázisműveleteket vizsgáltam a tesztelés során:
 
 A tesztek megvalósításához a NestJS-nek megfelelő könyvtárat kerestem, így esett a választásom a K6 könyvtárra. Ez részletes eredményeket közöl a teszt eredményeiről, ezek közül legfontosabbnak a http_req_durationt és a http_req_failed mezőket ítéltem (Alább a növények listájának "load tesztes" lekérésének eredménye látható)
 
-![](images\performance_test\query_loadtest_result.jpg)
+![](./images/performance_test/query_loadtest_result.jpg)
 
 ## Eredmények
 
