@@ -125,6 +125,7 @@ export const PlantPage = () => {
                       await water();
                     }}
                     rightIcon={<ImDroplet />}
+                    data-testid="waterPlantButton"
                   >
                     Water Now
                   </Button>
