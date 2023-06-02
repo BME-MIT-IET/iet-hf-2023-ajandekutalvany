@@ -63,6 +63,7 @@ export const PlantItem = ({ plant }: { plant: Plant }) => {
                   },
                 })
               }
+               data-testid="deletePlantModalButton"
             >
               Delete
             </Button>

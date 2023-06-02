@@ -36,6 +36,7 @@ export function PlantModal(props: {
               placeholder="Name"
               defaultValue={props.name}
               onChange={props.onChangeName}
+              data-testid="plantNameInput"
             />
             <Input
               variant="filled"
@@ -43,6 +44,7 @@ export function PlantModal(props: {
               defaultValue={props.waterFrequency}
               placeholder="Watering Frequency in Days"
               onChange={props.onChangeWatering}
+              data-testid="plantWateringInput"
             />
           </Stack>
         </ModalBody>
@@ -51,7 +53,8 @@ export function PlantModal(props: {
           <Button colorScheme="gray" mr={3} onClick={props.onClose}>
             Cancel
           </Button>
-          <Button variant="solid" colorScheme="green" onClick={props.onSubmit}>
+          <Button variant="solid" colorScheme="green" onClick={props.onSubmit}
+          data-testid="plantSubmitButton">
             {props.submitText}
           </Button>
         </ModalFooter>
