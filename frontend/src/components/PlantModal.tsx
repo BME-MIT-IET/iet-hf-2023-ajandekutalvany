@@ -21,7 +21,7 @@ export function PlantModal(props: {
   onChangeName: (e: ChangeEvent<HTMLInputElement>) => void;
   waterFrequency?: number;
   onChangeWatering: (e: ChangeEvent<HTMLInputElement>) => void;
-  onSubmit: () => void;
+  onSubmit: () => void | Promise<void>;
 }) {
   return (
     <Modal isOpen={props.open} onClose={props.onClose}>

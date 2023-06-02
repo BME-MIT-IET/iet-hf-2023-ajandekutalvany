@@ -1,5 +1,5 @@
 # ⚒ Build the builder image
-FROM node:18-bullseye as prodbuild
+FROM node:18-bullseye AS prodbuild
 
 # 🤫 Silence npm
 ENV NPM_CONFIG_LOGLEVEL=error
@@ -18,7 +18,7 @@ COPY src ./src
 RUN yarn build
 
 # 🚀 Build the runner image
-FROM node:18-bullseye-slim as runner
+FROM node:18-bullseye-slim AS runner
 
 # Add openssl and tini
 RUN apt-get -qy update && apt-get -qy install openssl tini
