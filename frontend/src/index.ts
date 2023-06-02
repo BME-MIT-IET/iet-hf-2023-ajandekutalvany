@@ -7,4 +7,5 @@ fetch("/config.json")
       process.env.REACT_APP_GRAPHQL_ENDPOINT ??
       config.REACT_APP_GRAPHQL_ENDPOINT;
   })
-  .then(() => import("./bootstrap"));
+  .then(() => import("./bootstrap"))
+  .catch();
