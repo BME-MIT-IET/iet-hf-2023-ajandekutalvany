@@ -10,4 +10,4 @@ async function bootstrap() {
   const { port, host } = config.server;
   await app.listen(port, host);
 }
-bootstrap();
+bootstrap().catch();
